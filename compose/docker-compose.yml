@@ -1,0 +1,16 @@
+services:
+  Curso:
+    container_name:
+      "web-1"
+    image:
+      "Alessandro/curso:latest"
+    ports:
+      - 8080:80
+      
+  Curso_Prod:
+    container_name:
+      "prod-1"
+    image:
+      "Alessandro/curso:1.3.0"
+    ports:
+      - 80:80
